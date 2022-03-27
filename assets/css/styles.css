@@ -60,12 +60,125 @@ img {
     font-weight: 700;
 }
 
+.nav {
+    align-self: stretch;
+}
+
+.nav__list {
+    height: 100%;
+}
+
+.nav__item {
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.nav__item--cart {
+    position: relative;
+}
+
+.cart {
+    display: none;
+    position: absolute;
+    padding-top: 24px;
+    width: 300px;
+    top: 100%;
+    right: 0;
+}
+
+.cart__list {
+    background-color: #ffffff;
+}
+
+.cart__item {
+    display: flex;
+    align-items: center;
+    padding: .75rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.cart__item:last-of-type {
+    border-bottom: 0;
+}
+
+.cart__img-container {
+    margin-right: .75rem;
+}
+
+.cart__img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.cart__title {
+    font-size: 1.125rem;
+}
+
+.cart__instructor {
+    font-size: 0.875rem;
+    color: #555758;
+    margin-top: .25rem;
+}
+
+.cart__price {
+    font-weight: 700;
+    margin-top: .25rem;
+}
+
+.cart__resume {
+    background-color: #ffffff;
+    padding: .75rem;
+    border-top: 1px solid #222222;
+}
+
+.cart__total {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.cart__remove-btn {
+    margin-top: .75rem;
+    display: block;
+    width: 100%;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: .75rem 1rem;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.nav__item--cart {
+    padding-left: 1rem;
+}
+
+.nav__item--cart:hover .cart {
+    display: block;
+}
+
 .nav__link {
     font-size: 1.5rem;
 }
 
-.nav__link:hover {
-    color: var(--primary-color);
+.nav__link--cart {
+    position: relative;
+}
+
+.nav__link-badge {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: var(--primary-color);
+    top: -40%;
+    left: 60%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.875rem;
 }
 
 .hero {
@@ -86,7 +199,7 @@ img {
         align-items: flex-start;
         background-image: url(../img/hero-bg.svg);
         background-repeat: no-repeat;
-        background-position: center left calc(400px + 5%);
+        background-position: center left calc(400px + 10%);
         background-size: 300px;
     }
 }
@@ -161,6 +274,7 @@ img {
 @media (min-width: 768px) {
     .info__container {
         grid-template-columns: repeat(2,1fr);
+        justify-items: initial;
     }
 }
 
@@ -168,6 +282,17 @@ img {
     .info__container {
         grid-template-columns: repeat(3,1fr);
         gap: 0;
+        justify-items: center;
+    }
+}
+
+.info__data {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .info__data {
+        text-align: initial;
     }
 }
 
