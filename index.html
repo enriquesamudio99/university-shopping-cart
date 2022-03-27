@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Shopping Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="navbar">
+            <div class="navbar__container container">
+                <a href="#" class="navbar__logo">
+                    <i class="fa-solid fa-building-columns navbar__logo-icon"></i>
+                    <p class="navbar__logo-text">University</p>
+                </a>
+        
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <i class="fa-solid fa-cart-shopping nav__link-icon"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="hero__container container">
+            <h1 class="hero__title">Learn <span class="hero__title-span">Something</span> New</h1>
+            <p class="hero__subtitle">A wide selection of courses at only $15</p>
+            <form action="" class="hero__form" method="get">
+                <div class="input-group">
+                    <input type="text" name="searchText" id="searchText" class="input-group__input" placeholder="Search anything">
+                    <button class="input-group__btn">
+                        <i class="fa-solid fa-magnifying-glass input-group__btn-icon"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="info__container container">
+            <div class="info__block">
+                <i class="fa-solid fa-lightbulb info__icon"></i>
+                <div class="info__data">
+                    <h2 class="info__title">2k+ Online courses</h2>
+                    <p class="info__text">Explore the latest topics</p>
+                </div>
+            </div>
+            <div class="info__block">
+                <i class="fa-solid fa-bullseye info__icon"></i>
+                <div class="info__data">
+                    <h2 class="info__title">Expert Instructors</h2>
+                    <p class="info__text">Learn with different styles</p>
+                </div>
+            </div>
+            <div class="info__block">
+                <i class="fa-solid fa-clock info__icon"></i>
+                <div class="info__data">
+                    <h2 class="info__title">Access for life</h2>
+                    <p class="info__text">Learn at your own pace</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+
+        <div class="courses">
+            <div class="courses__container container">
+                <h2 class="courses__title">Top Courses</h2>
+                <div class="courses__grid">
+                    <div class="course">
+                        <div class="course__img-container">
+                            <img src="assets/img/course-1-bg.jpg" alt="Course One Image" class="course__img">
+                        </div>
+                        <div class="course__data">
+                            <h3 class="course__title">HTML/CSS/JS</h3>
+                            <p class="course__instructor">John Doe</p>
+                            <div class="course__rating">
+                                <p class="course__rating-number">4,8</p>
+                                <div class="course__stars">
+                                    <i class="fa-solid fa-star course__star"></i>
+                                    <i class="fa-solid fa-star course__star"></i>
+                                    <i class="fa-solid fa-star course__star"></i>
+                                    <i class="fa-solid fa-star course__star"></i>
+                                    <i class="fa-solid fa-star-half-stroke course__star"></i>
+                                </div>
+                                <p class="course__number-students">(2000)</p>
+                            </div>
+                            <p class="course__price">14.99 US$</p>
+                            <a href="#" class="course__add-btn">Add to cart</a>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="course__img-container">
+                            <img src="assets/img/course-2-bg.jpg" alt="Course One Image" class="course__img">
+                        </div>
+                        <div class="course__data">
+                            <h3 class="course__title">React JS</h3>
+                            <p class="course__instructor">John Doe</p>
+                            <div class="course__rating">
+                                <p class="course__rating-number">5,0</p>
+                                <div class="course__stars">
+                                    <i class="fa-solid fa-star course__star"></i>
+                                    <i class="fa-solid fa-star course__star"></i>
+                                    <i class="fa-solid fa-star course__star"></i>
+                                    <i class="fa-solid fa-star course__star"></i>
+                                    <i class="fa-solid fa-star course__star"></i>
+                                </div>
+                                <p class="course__number-students">(1350)</p>
+                            </div>
+                            <p class="course__price">14.99 US$</p>
+                            <a href="#" class="course__add-btn">Add to cart</a>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="course__img-container">
+                            <img src="assets/img/course-3-bg.jpg" alt="Course One Image" class="course__img">
+                        </div>
+                        <div class="course__data">
+                            <h3 class="course__title">Advanced Excel</h3>
+                            <p class="course__instructor">John Doe</p>
+                            <div class="course__rating">
+                                <p class="course__rating-number">4,5</p>
+                                <div class="course__stars">
+                                    <i class="fa-solid fa-star course__star"></i>
+                                    <i class="fa-solid fa-star course__star"></i>
+                                    <i class="fa-solid fa-star course__star"></i>
+                                    <i class="fa-solid fa-star course__star"></i>
+                                    <i class="fa-solid fa-star-half-stroke course__star"></i>
+                                </div>
+                                <p class="course__number-students">(1650)</p>
+                            </div>
+                            <p class="course__price">14.99 US$</p>
+                            <a href="#" class="course__add-btn">Add to cart</a>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="course__img-container">
+                            <img src="assets/img/course-4-bg.png" alt="Course One Image" class="course__img">
+                        </div>
+                        <div class="course__data">
+                            <h3 class="course__title">MERN Stack</h3>
+                            <p class="course__instructor">John Doe</p>
+                            <div class="course__rating">
+                                <p class="course__rating-number">4,8</p>
+                                <div class="course__stars">
+                                    <i class="fa-solid fa-star course__star"></i>
+                                    <i class="fa-solid fa-star course__star"></i>
+                                    <i class="fa-solid fa-star course__star"></i>
+                                    <i class="fa-solid fa-star course__star"></i>
+                                    <i class="fa-solid fa-star-half-stroke course__star"></i>
+                                </div>
+                                <p class="course__number-students">(700)</p>
+                            </div>
+                            <p class="course__price">14.99 US$</p>
+                            <a href="#" class="course__add-btn">Add to cart</a>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="course__img-container">
+                            <img src="assets/img/course-5-bg.jpg" alt="Course One Image" class="course__img">
+                        </div>
+                        <div class="course__data">
+                            <h3 class="course__title">Laravel 9</h3>
+                            <p class="course__instructor">John Stones</p>
+                            <div class="course__rating">
+                                <p class="course__rating-number">5,0</p>
+                                <div class="course__stars">
+                                    <i class="fa-solid fa-star course__star"></i>
+                                    <i class="fa-solid fa-star course__star"></i>
+                                    <i class="fa-solid fa-star course__star"></i>
+                                    <i class="fa-solid fa-star course__star"></i>
+                                    <i class="fa-solid fa-star course__star"></i>
+                                </div>
+                                <p class="course__number-students">(950)</p>
+                            </div>
+                            <p class="course__price">14.99 US$</p>
+                            <a href="#" class="course__add-btn">Add to cart</a>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="course__img-container">
+                            <img src="assets/img/course-6-bg.jpg" alt="Course One Image" class="course__img">
+                        </div>
+                        <div class="course__data">
+                            <h3 class="course__title">Advanced Word</h3>
+                            <p class="course__instructor">John Stones</p>
+                            <div class="course__rating">
+                                <p class="course__rating-number">5,0</p>
+                                <div class="course__stars">
+                                    <i class="fa-solid fa-star course__star"></i>
+                                    <i class="fa-solid fa-star course__star"></i>
+                                    <i class="fa-solid fa-star course__star"></i>
+                                    <i class="fa-solid fa-star course__star"></i>
+                                    <i class="fa-solid fa-star course__star"></i>
+                                </div>
+                                <p class="course__number-students">(450)</p>
+                            </div>
+                            <p class="course__price">14.99 US$</p>
+                            <a href="#" class="course__add-btn">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__box">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            University Business
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Teach on University
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Get the application
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Who are we?
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Get in touch with us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__box">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Careers
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Help & Support
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Affiliate
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Investors
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__box">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Terms and Conditions
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Cookie Settings
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Site Map
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Accessibility Statement
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
