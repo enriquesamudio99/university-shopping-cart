@@ -81,10 +81,11 @@ img {
 .cart {
     display: none;
     position: absolute;
-    padding-top: 24px;
+    padding-top: 4px;
     width: 300px;
     top: 100%;
     right: 0;
+    z-index: 100;
 }
 
 .cart__list {
@@ -147,6 +148,14 @@ img {
     padding: .75rem 1rem;
     color: #ffffff;
     font-weight: 700;
+}
+
+.cart__empty {
+    background-color: #ffffff;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #555758;
+    font-size: 1.125rem;
 }
 
 .nav__item--cart {
